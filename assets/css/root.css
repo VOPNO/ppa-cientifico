@@ -1,0 +1,5 @@
+:root {
+    --verde-site-ce: #24A637;
+    --ciano-site-ce: #55BEC6;
+    --background-site: linear-gradient(to right, var(--verde-site-ce), var(--ciano-site-ce));
+}
