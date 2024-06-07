@@ -55,6 +55,11 @@ button {
     border: 3px solid black;
 }
 
+button:active {
+    background: rgba(255, 255, 255, 0.116);
+    transform: scale(0.9);
+}
+
 .novaPosicao {
     position: absolute;
     top: 20px;
