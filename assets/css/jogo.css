@@ -33,7 +33,7 @@ body {
 }
 
 .green {
-    color: var(--verde-site-ce);
+    color: var(--background-site);
 }
 
 h1 {
@@ -85,4 +85,8 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.score-div p {
+    font-size: 3rem;
 }
