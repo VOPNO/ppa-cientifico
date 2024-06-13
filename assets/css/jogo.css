@@ -32,16 +32,17 @@ body {
     height: 100vh;
 }
 
-.green {
-    color: var(--background-site);
-}
 
 h1 {
     font-size: 4rem;
 }
 
 .play {
-    background: red;
+    background: var(--verde-site-ce);
+}
+
+.return {
+    background: var(--ciano-site-ce);
 }
 
 button {
@@ -53,6 +54,7 @@ button {
     font-family: "Pixelify Sans", sans-serif;
     border-radius: 10%;
     border: 3px solid black;
+    cursor: pointer;
 }
 
 button:active {
@@ -71,7 +73,7 @@ button:active {
     margin: 0.5rem auto;
     width: 90%;
     height: 90%;
-    border: 1px solid black
+
 }
 
 header {
@@ -88,5 +90,73 @@ header {
 }
 
 .score-div p {
+    font-size: 3rem !important;
+}
+
+.score-div {
+    position: absolute;
+    left: 67%; 
+    top: 10%;
+    width: auto;
+    display: flex;
+    gap: 1rem;
     font-size: 3rem;
+}
+
+.score-div::before {
+    content: 'Pontos: ';
+}
+
+.cont-game p {
+    font-size: 2rem;
+}
+
+.cont-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.cont-perguntas, .cont-resu, .cont-resu-final, .div-cont-inicio {
+    margin: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cont-button-inicial {
+    margin-top: 20%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-home-img {
+    width: 5rem;
+    vertical-align: middle;
+}
+
+.tam0 {
+    width: 0;
+    height: 0;
+}
+
+.img-button-avancar{
+    width: 2.5rem;
+    vertical-align: middle;
+}
+
+.verde-win {
+    color: var(--verde-site-ce);
+}
+
+.vermelho-loser {
+    color: red;
+}
+
+.ciano-site {
+    color: var(--ciano-site-ce);
 }
