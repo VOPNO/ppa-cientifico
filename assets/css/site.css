@@ -19,7 +19,7 @@
     height: 12vh;
 }
 .cont-header-int {
-    background: rgb(146, 146, 146);
+    /* background: rgb(146, 146, 146); */
     width: 100vw;
     height: 12vh;
     display: flex;
@@ -57,7 +57,42 @@
 
 }
 
-.list::before {
+/* .list::before {
     content: '•';
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; 
+} */
+
+.link {
+    text-decoration: underline;
+    color: rgb(0, 0, 212);
 }
+
+.link:visited{
+    color: rgb(0, 0, 138);
+}
+
+.subtitle {
+    font-size: 2.1rem;
+}
+
+.apresentacao-nobel {
+    margin-top: 2rem;
+}
+
+.margin-article {
+    margin-left: 2rem;
+}
+
+.margin-cont {
+    margin-left: 1rem;
+}
+
+.list  {
+    margin-bottom: 1rem;
+}
+
+
+.lista, .text  {
+    margin-bottom: 1rem;
+}
+

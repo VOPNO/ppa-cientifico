@@ -15,10 +15,13 @@ h1, h2, h3, h4, h5 {
 p {
     font-family: var(--font-text);
     font-size: 1.9rem;
+    margin-left: 1rem;
+    justify-content: center;
 }
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
@@ -28,7 +31,6 @@ h2 {
 h3 {
     font-size: 2.5rem;
     text-decoration: underline;
-    margin: 1rem 0;
 }
 
 h4 {
