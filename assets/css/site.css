@@ -1,98 +1,119 @@
-* {
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #ECECEC; /* Cor de fundo geral */
 }
 
-.logo {
-    width: 18rem;
-    height: 9rem;
-    cursor: pointer;
+.cont-all-ext {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.cont-all-ext{
-    overflow-x: hidden;
-}
-
-.cont-header-ext {
-    width: 100vw;
-    height: 12vh;
-}
-.cont-header-int {
-    /* background: rgb(146, 146, 146); */
-    width: 100vw;
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-}
+/* Estilos do Header */
 
 .header {
-    width: 90%;
-    height: 100%;
+    background-color: #2E8C4F; /* Cor principal para o header */
+    padding: 10px 0;
+}
+
+.cont-header-int {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header nav ul {
+.logo-link {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.logo {
+    height: 60px; /* Ajuste conforme necessário */
+    width: auto; /* Ajuste conforme necessário */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 4rem;
     align-items: baseline;
-
 }
 
-.header nav ul li a {
-    font-size: 2rem;
+.navbar ul li {
+    margin-right: 20px;
 }
 
-.cont-main-ext {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+.navbar ul li a {
+    color: #ECECEC; /* Cor do texto */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.cont-main-int {
-    width: 90%;
-
+.navbar ul li a:hover {
+    color: #4BA965; /* Cor de hover */
 }
 
-/* .list::before {
-    content: '•';
-    /* margin-right: 0.5rem; 
-} */
-
-.link {
-    text-decoration: underline;
-    color: rgb(0, 0, 212);
+.navbar i {
+    margin-left: 10px;
+    color: #2E8C4F; /* Cor do ícone */
 }
 
-.link:visited{
-    color: rgb(0, 0, 138);
+/* Estilos do Conteúdo Principal */
+
+.main {
+    background-color: #FFFFFF; /* Cor de fundo do conteúdo principal */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    color: #2E8C4F; /* Cor do título principal */
 }
 
 .subtitle {
-    font-size: 2.1rem;
+    color: #333333; /* Cor do subtítulo */
 }
 
 .apresentacao-nobel {
-    margin-top: 2rem;
+    margin-bottom: 30px;
+}
+
+.apresentacao-nobel h2 {
+    color: #2E8C4F; /* Cor do título secundário */
 }
 
 .margin-article {
-    margin-left: 2rem;
+    margin-top: 20px;
 }
 
-.margin-cont {
-    margin-left: 1rem;
+.list {
+    color: #2E8C4F; /* Cor dos títulos de lista */
 }
 
-.list  {
-    margin-bottom: 1rem;
+.text {
+    color: #333333; /* Cor do texto principal */
 }
 
-
-.lista, .text  {
-    margin-bottom: 1rem;
+.lista {
+    margin-top: 10px;
 }
 
+.link {
+    color: #2E8C4F; /* Cor dos links */
+}
+
+.link:hover {
+    text-decoration: underline;
+}
