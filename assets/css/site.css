@@ -47,7 +47,6 @@
 }
 
 .cont-main-ext {
-    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -56,14 +55,6 @@
 .cont-main-int {
     width: 90%;
 
-}
-
-.parte {
-    height: 100vh;
-}
-
-.special-list {
-    list-style: disc !important; 
 }
 
 .list::before {
