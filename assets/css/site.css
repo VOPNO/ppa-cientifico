@@ -1,11 +1,9 @@
-/* Estilos gerais */
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ECECEC; /* Cor de fundo geral */
+    background-color: #ECECEC; 
 }
 
 .cont-all-ext {
@@ -42,7 +40,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 .navbar ul li {
@@ -116,4 +114,52 @@ body {
 
 .link:hover {
     text-decoration: underline;
+}
+
+/* Media Query para dispositivos móveis (até 600px de largura) */
+@media (max-width: 600px) {
+    .cont-all-ext {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 5px 0;
+    }
+
+    .logo {
+        height: 40px; /* Ajuste conforme necessário */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem; /* Reduzindo o tamanho do título principal */
+    }
+
+    .subtitle {
+        font-size: 1.6rem; /* Ajustando o tamanho do subtítulo */
+    }
+
+    .apresentacao-nobel h2 {
+        font-size: 2.2rem; /* Ajustando o tamanho do título secundário */
+    }
+
+    .list {
+        font-size: 1.4rem; /* Ajustando o tamanho dos títulos de lista */
+    }
+
+    .text {
+        font-size: 1.4rem; /* Ajustando o tamanho do texto principal */
+    }
 }
