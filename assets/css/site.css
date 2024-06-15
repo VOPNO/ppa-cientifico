@@ -61,3 +61,12 @@
 .parte {
     height: 100vh;
 }
+
+.special-list {
+    list-style: disc !important; 
+}
+
+.list::before {
+    content: '•';
+    margin-right: 0.5rem;
+}
