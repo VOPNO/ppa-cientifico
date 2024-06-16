@@ -162,7 +162,7 @@ header {
     color: var(--ciano-site-);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     html {
         font-size: 50%; /* Ajuste o tamanho da fonte base para smartphones */
         

@@ -145,6 +145,25 @@ body {
 .ol-nocolor{
     color: #333333;
 }
+
+.footer {
+    background: var(--cinza-escuro);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer h2{
+    color: var(--bege-claro);
+}
+
+.footer i {
+    color: var(--bege-claro);
+}
+
+.footer a {
+    color: var(--bege-claro);
+    text-decoration: none;
+}
 /* Media Query para dispositivos móveis (até 600px de largura) */
 @media (max-width: 600px) {
     .navbar i {
