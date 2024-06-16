@@ -26,13 +26,14 @@ html {
 }
 
 body {
-    background: var(--background-site);
+    background: var(--bege-claro);
     height: 100vh;
 }
 
 
 h1 {
     font-size: 4rem;
+    color: var(--verde-principal);
 }
 
 .play {
@@ -40,7 +41,7 @@ h1 {
 }
 
 .return {
-    background: var(--ciano-site-ce);
+    background: var(--);
 }
 
 button {
@@ -65,6 +66,7 @@ button:active {
     top: 20px;
     left: 20px;
     right: 20px;
+    background: var(--verde-principal);
 }
 
 .cont-game {
@@ -77,6 +79,7 @@ button:active {
 header {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .categoriasSelect {
@@ -148,7 +151,7 @@ header {
 }
 
 .verde-win {
-    color: var(--verde-site-ce);
+    color: var(--verde-principal);
 }
 
 .vermelho-loser {
@@ -156,7 +159,7 @@ header {
 }
 
 .ciano-site {
-    color: var(--ciano-site-ce);
+    color: var(--ciano-site-);
 }
 
 @media (max-width: 600px) {
@@ -169,9 +172,9 @@ header {
     }
 
     button {
-        min-width: 7rem; /* Ajuste para smartphones */
-        min-height: 4rem; /* Ajuste para smartphones */
-        font-size: 1.6rem; /* Ajuste para smartphones */
+        max-width: 7rem; /* Ajuste para smartphones */
+        max-height: 4rem; /* Ajuste para smartphones */
+        font-size: 1.3rem; /* Ajuste para smartphones */
     }
 
     .score-div p {
@@ -179,8 +182,15 @@ header {
     }
 
     .score-div {
-        left: 50%; /* Ajuste para smartphones */
-        top: 5%; /* Ajuste para smartphones */
+        left: 60%; /* Ajuste para smartphones */
+        top: 17%; /* Ajuste para smartphones */
         font-size: 1.8rem; /* Ajuste para smartphones */
+    }
+    
+    .cont-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 }
