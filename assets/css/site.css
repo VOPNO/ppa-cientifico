@@ -121,11 +121,29 @@ body {
 }
 
 .link {
-    color: #2E8C4F; /* Cor dos links */
+    color: #2E8C4F; 
 }
 
 .link:hover {
     text-decoration: underline;
+}
+
+.link:visited {
+    color: var(--verde-escuro);
+}
+
+.cont-img-laureados{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.img-laureados{
+    width: 48%;
+}
+
+.ol-nocolor{
+    color: #333333;
 }
 /* Media Query para dispositivos móveis (até 600px de largura) */
 @media (max-width: 600px) {
@@ -157,5 +175,13 @@ body {
     .navbar ul li a {
         display: block;
         padding: 10px 0;
+    }
+
+    .cont-img-laureados {
+        display: block;
+    }
+
+    .cont-img-laureados .img-laureados{
+        width: 100%;
     }
 }
