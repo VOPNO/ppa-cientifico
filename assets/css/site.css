@@ -74,7 +74,7 @@ body {
 /* Estilos do Conteúdo Principal */
 
 .main {
-    background-color: #FFFFFF; /* Cor de fundo do conteúdo principal */
+    background-color: #FFFFFF; 
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -86,11 +86,11 @@ body {
 }
 
 .intro h1 {
-    color: var(--verde-principal); /* Cor do título principal */
+    color: var(--verde-principal); 
 }
 
 .subtitle {
-    color: #333333; /* Cor do subtítulo */
+    color: #333333; 
 }
 
 .apresentacao-nobel {
