@@ -1,9 +1,11 @@
+/* Estilos gerais */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ECECEC; 
+    background-color: var(--bege-claro); /* Cor de fundo geral */
 }
 
 .cont-all-ext {
@@ -15,8 +17,9 @@ body {
 /* Estilos do Header */
 
 .header {
-    background-color: #2E8C4F; /* Cor principal para o header */
+    background-color: var(--verde-principal); /* Cor principal para o header */
     padding: 10px 0;
+    position: relative;
 }
 
 .cont-header-int {
@@ -31,8 +34,19 @@ body {
 }
 
 .logo {
-    height: 60px; /* Ajuste conforme necessário */
-    width: auto; /* Ajuste conforme necessário */
+    height: 60px; 
+    width: auto; 
+}
+
+.navbar  {
+    position: relative;
+}
+
+.navbar i {
+    color: var(--bege-claro);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
 }
 
 .navbar ul {
@@ -48,18 +62,13 @@ body {
 }
 
 .navbar ul li a {
-    color: #ECECEC; /* Cor do texto */
+    color: var(--bege-claro); 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #4BA965; /* Cor de hover */
-}
-
-.navbar i {
-    margin-left: 10px;
-    color: #2E8C4F; /* Cor do ícone */
+    color: var(--verde-escuro); /* Cor de hover */
 }
 
 /* Estilos do Conteúdo Principal */
@@ -77,7 +86,7 @@ body {
 }
 
 .intro h1 {
-    color: #2E8C4F; /* Cor do título principal */
+    color: var(--verde-principal); /* Cor do título principal */
 }
 
 .subtitle {
@@ -89,7 +98,7 @@ body {
 }
 
 .apresentacao-nobel h2 {
-    color: #2E8C4F; /* Cor do título secundário */
+    color: var(--verde-principal); /* Cor do título secundário */
 }
 
 .margin-article {
@@ -97,9 +106,12 @@ body {
 }
 
 .list {
-    color: #2E8C4F; /* Cor dos títulos de lista */
+    color: var(--verde-principal); /* Cor dos títulos de lista */
 }
 
+.dados h2{
+    color: var(--verde-principal);
+}
 .text {
     color: #333333; /* Cor do texto principal */
 }
@@ -115,51 +127,35 @@ body {
 .link:hover {
     text-decoration: underline;
 }
-
 /* Media Query para dispositivos móveis (até 600px de largura) */
 @media (max-width: 600px) {
-    .cont-all-ext {
-        padding: 10px;
-    }
-
-    .header {
-        padding: 5px 0;
-    }
-
-    .logo {
-        height: 40px; /* Ajuste conforme necessário */
+    .navbar i {
+        display: block; /* Mostrar o ícone em telas pequenas */
+        margin-right: 2rem;
     }
 
     .navbar ul {
+        display: none; /* Esconder o menu por padrão em telas pequenas */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #2E8C4F;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul.expanded {
+        display: flex; /* Mostrar o menu quando expandido */
     }
 
     .navbar ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    .main {
-        padding: 10px;
-    }
-
-    .intro h1 {
-        font-size: 2.5rem; /* Reduzindo o tamanho do título principal */
-    }
-
-    .subtitle {
-        font-size: 1.6rem; /* Ajustando o tamanho do subtítulo */
-    }
-
-    .apresentacao-nobel h2 {
-        font-size: 2.2rem; /* Ajustando o tamanho do título secundário */
-    }
-
-    .list {
-        font-size: 1.4rem; /* Ajustando o tamanho dos títulos de lista */
-    }
-
-    .text {
-        font-size: 1.4rem; /* Ajustando o tamanho do texto principal */
+    .navbar ul li a {
+        display: block;
+        padding: 10px 0;
     }
 }
