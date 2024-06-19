@@ -164,6 +164,17 @@ body {
     color: var(--bege-claro);
     text-decoration: none;
 }
+
+.creditos {
+    color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+.creditos i {
+    color: #333333;
+}
+
 /* Media Query para dispositivos móveis (até 600px de largura) */
 @media (max-width: 600px) {
     .navbar i {

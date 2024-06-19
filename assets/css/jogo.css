@@ -23,6 +23,7 @@ html {
     background: #fff;
     border-radius: 20px;
     margin: 7rem auto;
+    border: 1px solid var(--verde-principal);
 }
 
 body {
@@ -162,6 +163,10 @@ header {
     color: var(--ciano-site-);
 }
 
+.return i {
+    color: black;
+    
+}
 @media (max-width: 650px) {
     html {
         font-size: 50%; /* Ajuste o tamanho da fonte base para smartphones */

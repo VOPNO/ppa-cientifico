@@ -77,7 +77,7 @@ function introduction(){
     const buttonAvancar = createElement('button');
     const h2 = createElement('h2');
 
-    buttonAvancar.innerHTML = '<img src="./assets/img/jogos/avancar.svg" class="img-button-avancar"></img>';
+    buttonAvancar.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
     buttonAvancar.classList.add('avancar');
     buttonAvancar.addEventListener('click', () => {
         if(i < mensageWelcome.length-1){
