@@ -1,8 +1,8 @@
 # Mulheres no Nobel: Conquistas e Impactos
 ## Índice
 
-- [Sobre](###sobre)
-- [Contato](#contato)
+- [Sobre](#Sobre)
+- [Contato](#Contato)
 
 ### Sobre
 O projeto foi desenvolvido com o intuito de ser utilizado em conjunto com uma apresentação oral e visual, proporcionando aos ouvintes a oportunidade de se aprofundarem nos assuntos abordados.
