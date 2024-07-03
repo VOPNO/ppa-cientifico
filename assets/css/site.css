@@ -140,6 +140,7 @@ body {
 
 .img-laureados{
     width: 48%;
+    border: 1px solid gray;
 }
 
 .ol-nocolor{
@@ -171,9 +172,10 @@ body {
     justify-content: center;
 }
 
-.creditos i {
+.creditos i, .creditos a {
     color: #333333;
 }
+
 
 /* Media Query para dispositivos móveis (até 600px de largura) */
 @media (max-width: 600px) {
