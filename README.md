@@ -15,6 +15,6 @@ O **Ceará Científico** tem como princípio popularizar as ciências e promover
 
 ### Contato
 
-**Email:** beserraguilherme405@gmail.com
+**Email:** contatoguilhermebeserra@gmail.com
 
 **Discord:** @vopno
